@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a1ba8ce-6930-4c46-a3bd-5ddd982110a8" name="Changes" comment="Commit" />
+    <list default="true" id="5a1ba8ce-6930-4c46-a3bd-5ddd982110a8" name="Changes" comment="Commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sequencial/GaUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sequencial/GaUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sequencial/Individual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sequencial/Individual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sequencial/Population.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sequencial/Population.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sma/IslandAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sma/IslandAgent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sma/MainContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sma/MainContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sma/MasterAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sma/MasterAgent.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,23 +34,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/work/SMA/Num_magic/jade.jar",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/work/SMA/Num_magic/jade.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
-      "directory",
-      "module"
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;
     ]
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="SimpleContainer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sma.SimpleContainer" />
+      <module name="Island_GEN_ALGO_SMA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sma.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SimpleContainer" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -52,6 +80,7 @@
       <option name="presentableId" value="Default" />
       <updated>1685201016315</updated>
       <workItem from="1685201018045" duration="2422000" />
+      <workItem from="1685218729692" duration="2104000" />
     </task>
     <task id="LOCAL-00001" summary="Commit">
       <created>1685203075828</created>
@@ -60,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685203075828</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Commit">
+      <created>1685218951342</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685218951342</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

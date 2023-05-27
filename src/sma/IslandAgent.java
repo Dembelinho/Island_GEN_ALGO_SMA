@@ -2,7 +2,6 @@ package sma;
 
 import jade.core.Agent;
 import jade.core.behaviours.OneShotBehaviour;
-import jade.core.behaviours.SequentialBehaviour;
 import jade.domain.DFService;
 import jade.domain.FIPAAgentManagement.DFAgentDescription;
 import jade.domain.FIPAAgentManagement.ServiceDescription;
@@ -10,32 +9,35 @@ import jade.domain.FIPAException;
 import jade.lang.acl.ACLMessage;
 import sequencial.GaUtils;
 import sequencial.Individual;
+import sequencial.Population;
+
+import java.util.Random;
 
 public class IslandAgent extends Agent {
-    private Individual[] population =new Individual[GaUtils.POPULATION_SIZE];
-    private Individual individual1;
-    private  Individual individual2;
+
+    Population population=new Population();
+    Random rnd=new Random();
+    DFAgentDescription dfAgentDescription=new DFAgentDescription();
+    ServiceDescription serviceDescription=new ServiceDescription();
 
     @Override
     protected void setup() {
-        DFAgentDescription dfAgentDescription=new DFAgentDescription();
-        ServiceDescription serviceDescription=new ServiceDescription();
-
         dfAgentDescription=new DFAgentDescription();
         dfAgentDescription.setName(getAID());
         serviceDescription=new ServiceDescription();
-        serviceDescription.setType("island");
+        serviceDescription.setType("IslandAgent");
         serviceDescription.setName("ga");
         dfAgentDescription.addServices(serviceDescription);
-        try {
-            DFService.register(this,dfAgentDescription);
-        } catch (FIPAException e) {
-            throw new RuntimeException(e);
-        }
+//
         addBehaviour(new OneShotBehaviour() {
             @Override
             public void action() {
-                population.;
+                try {
+                    DFService.register(myAgent,dfAgentDescription);
+                } catch (FIPAException e) {
+                    throw new RuntimeException(e);
+                }
+                population.initialaizePopulation();
                 population.calculateIndFintess();
                 population.sortPopulation();
                 int it=0;
@@ -54,13 +56,14 @@ public class IslandAgent extends Agent {
                     ACLMessage replay=new ACLMessage();
                     replay.addReceiver(message.getSender());
                     Individual best = population.getFitnessIndivd();
-                    replay.setContent(String.valueOf(best.getGenes()) +":"+best.getFitness());
+                    replay.setContent(String.valueOf(best.getChromosomes()) +":"+best.getFitness());
                     send(replay);
+                    System.out.println(replay);
                 }
             }
         });
-
     }
+
 
     @Override
     protected void takeDown() {
